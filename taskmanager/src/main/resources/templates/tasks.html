@@ -2,6 +2,20 @@
     <head>
     </head>
     <body>
-        <h1>Tasks</h1>
+        <h2>Tasks</h2>
+        <table id="table">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Creator</th>
+                <th>Assignee</th>
+            </tr>
+            <tr>
+                <td th:text="${task.title}"></td>
+                <td th:text="${task.description}"></td>
+                <td th:text="${task.creator}"></td>
+                <td th:text="${task.assignee}"></td>
+            </tr>
+        </table>
     </body>
 </html>
